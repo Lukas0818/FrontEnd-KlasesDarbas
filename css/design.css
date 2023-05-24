@@ -1,0 +1,79 @@
+body > * {
+    border: 1px solid black;
+    margin: 3px;
+}
+
+body > header {
+    background-color: #1A1A1A;
+}
+
+.main_content {
+    background-color: #F6F6F6;
+}
+
+body > div > aside {
+    background-color: #E0E0E0;
+}
+
+body > footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+div.relkama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #1A1A1A;
+    color: white;
+    width: 150px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVIGATION design */
+body > header nav ul li {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px solid white;
+}
+
+body > header nav ul li:last-child {
+    border-right: none;
+}
+body > header nav ul li:hover span {
+    transition: all 0.5s cubic-bezier(1, 0.48, 0.01, 0.74);
+    font-size: 1.7em;
+}
+body > header nav ul li:hover {
+    transition: all 0.5s cubic-bezier(1, 0.48, 0.01, 0.74);
+    margin: 2px;
+    padding: 2px;
+    border-bottom: 1px dotted white;
+}
+
+body > header nav ul li {
+    display:inline;
+    font-size: 1.5em;
+}
+
+nav ul li span{
+    transition: font-size 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, span.link:hover {
+    cursor: pointer;
+  }
+  
+  a:hover:before, span.link:hover:before {
+    content: '\2192 ';
+    color: white;
+  }
+  

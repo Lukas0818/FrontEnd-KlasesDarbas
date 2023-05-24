@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mano kontaktai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul></ul>
+    </nav>
+</header>
+
+<main>
+    <div>
+        <div class="container">
+            <div class="components">
+                <h1>Mano kontaktai</h1>
+                <form action="kursiustiduomenis.php" method="post" class="form">
+
+                    <label for="vardas">Vardas</label>
+                    <input type="text" name="vardas" id="vardas" class="form__input">
+
+                    <label for="slapyvardis">Slapyvardis</label>
+                    <input type="text" name="slapyvardis" id="slapyvardis" class="form__input">
+
+                    <label for="email">El. paštas</label>
+                    <input type="email" name="email" id="email" class="form__input">
+
+                    <label for="ar_pilnametis">Ar jums yra 18?</label>
+                    <select name="ar_pilnametis" id="ar_pilnametis" class="form__input">
+                        <option value="1">Taip</option>
+                        <option value="2">Ne</option>
+                    </select>
+
+                    <label for="komentaras">Komentaras</label>
+                    <textarea name="komentaras" id="komentaras" cols="30" rows="10" class="form__input"></textarea>
+
+                    <div>
+                        <button type="submit" class="btn btn__primary">Siųsti</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<aside>
+    <div class="reklama">Cia gali buti jusu reklama</div>
+</aside>
+<footer>
+    <span>© 2023 - visos teisės saugomos</span>
+</footer>
+
+<script src="/js/meniu.js" defer></script>
+</body>
+</html>
